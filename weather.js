@@ -16,7 +16,7 @@ async function takeName(){
     const response = await fetch(URL);
     console.log(response)
     if(response.status == 404){
-        alert("Şehir Bulunamadı");
+        alert("Şehir Bulunamadi can");
     }else{
         const responseJSON = await response.json();
         derece.innerHTML = parseInt(responseJSON.main.temp - 273) + "°C" ;
